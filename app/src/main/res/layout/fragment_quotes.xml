@@ -7,17 +7,28 @@
   android:layout_height="match_parent"
   tools:context=".controller.QuotesFragment">
 
+
   <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/quote_list"
     android:layout_width="0dp"
     android:layout_height="0dp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-    android:orientation="vertical"
+    android:padding="@dimen/half_margin"
     android:background="#FFE0E0E0"
-    android:padding="@dimen/half_margin"/>
+    android:orientation="vertical"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"/>
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/add_quote"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_add"
+    app:useCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
