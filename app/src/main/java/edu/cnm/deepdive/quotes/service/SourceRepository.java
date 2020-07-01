@@ -6,7 +6,7 @@ import edu.cnm.deepdive.quotes.model.dao.SourceDao;
 import edu.cnm.deepdive.quotes.model.entity.Source;
 import java.util.List;
 
-public class SourcesRepository {
+public class SourceRepository {
 
   private final Context context;
   private final QuotesDatabase database;
@@ -14,7 +14,7 @@ public class SourcesRepository {
 
 
 
-  public SourcesRepository(Context context) {
+  public SourceRepository(Context context) {
     this.context = context;
     database = QuotesDatabase.getInstance();
     sourceDao = database.getSourceDao();
